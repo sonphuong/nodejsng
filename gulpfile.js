@@ -111,9 +111,9 @@ gulp.task('local',function(){
   gulp.watch([srcImg],['copyImg']);
 });
 //run prod environment
-gulp.task('heroku', function() {
-  connect.server({
-    root: './dist',
-    livereload: false
-  });
-});
+// gulp.task('heroku', function() {
+//   connect.server({
+//     root: './dist',
+//     livereload: false
+//   });
+// });
