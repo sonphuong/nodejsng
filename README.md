@@ -18,6 +18,10 @@ keywords: (array, optional) là một mảng string mô tả về app.
 image: (string, optional) khai báo Docker image cho Heroku-Docker để build app.
 Tất cả đều là optional nên nếu không có file này app vẫn chạy bình thường
 ## 2. Procfile 
+Chỉ ra cho Heroku những lệnh sẽ được khởi chạy khi hệ thống bật, proc là viết tắt của process,
+được khai báo theo định dạng: <pre><code> process-type: command </code></pre> xem ví dụ
+<pre><code> web: node index.js </code></pre>
+process type ở đây là "web", lệnh sẽ được chạy là "node index.js" (ngoài process type là web ra còn có worker, urgentworker, clock...
 ## 3. scripts.json 
 ## 4. styles.json 
 ## 5. test.js 
