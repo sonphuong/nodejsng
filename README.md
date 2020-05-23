@@ -57,7 +57,7 @@ Requires the ngRoute module to be installed.
 
 ## 4. gulpfile.js
 
-### What os Gulp? 
+### What is Gulp? 
 gulp is an open-source JavaScript toolkit used as a streaming build system in front-end web development.
 It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development like minification, concatenation, cache busting, unit testing, linting, optimization, etc...
 
@@ -73,8 +73,16 @@ gulp.task('concatJsLibs',function(){
 })
 </code></pre>
 #### Explain: 
-- gulp.task('taskName', function(){ //here is what the task will do })
-- gulp.src :Creates a stream for reading Vinyl objects from the file system.
+- gulp.task('taskName', function() { //here is what the task will do } )
+- gulp.src(): Creates a stream for reading Vinyl objects **From** the file system.
+- gulp.dest(): Creates a stream for writing Vinyl objects **To** the file system.
+so gulp.src(), gulp.dest() are streams instant
+- gulp.src(scripts).pipe(concat(jsLibsFile)) 
+
 
 Note: BOMs (byte order marks) have no purpose in UTF-8 and will be removed from UTF-8 files read by src(), unless disabled using the removeBOM option.
+##### what is stream?
+A 'stream' is node's I/O abstraction, HTTP connections are streams, open files are streams; stdin, stdout, and stderr are all streams as well.
+stream.pipe() is the method used to take a readable stream and connect it to a writeable steam.
+##### what is Vinyl object?
 Vinyl is a metadata object that describes a file. The main properties of a Vinyl instance are path and contents - core aspects of a file on your file system (local or remote).
