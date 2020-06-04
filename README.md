@@ -81,8 +81,8 @@ so gulp.src(), gulp.dest() are streams instant
 
 
 Note: BOMs (byte order marks) have no purpose in UTF-8 and will be removed from UTF-8 files read by src(), unless disabled using the removeBOM option.
-##### what is stream?
+##### What is stream?
 A 'stream' is node's I/O abstraction, HTTP connections are streams, open files are streams; stdin, stdout, and stderr are all streams as well.
 stream.pipe() is the method used to take a readable stream and connect it to a writeable steam.
-##### what is Vinyl object?
+##### What is Vinyl object?
 Vinyl is a metadata object that describes a file. The main properties of a Vinyl instance are path and contents - core aspects of a file on your file system (local or remote).
