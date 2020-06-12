@@ -1,4 +1,4 @@
-# Giải thích cụ thể từng dòng, từng file trong project
+## Giải thích cụ thể từng dòng, từng file trong project
 ## 1. app.json
 app.json là file chứa thông tin như biến môi trường, add-ons và những thông tin cần thiết khác để chạy app trên heroku. 
 Xét ví dụ:
