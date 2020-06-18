@@ -4,7 +4,7 @@
   "description": "frontend of playscang",
   "main": "index.js",
   "dependencies": {
-    "angular": "^1.6.7",
+    "angular": "^1.8.0",
     "angular-route": "^1.6.7",
     "angular-ui-grid": "^4.1.1",
     "angularjs": "0.0.1",
