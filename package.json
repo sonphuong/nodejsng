@@ -8,7 +8,7 @@
     "angular-route": "^1.6.7",
     "angular-ui-grid": "^4.1.1",
     "angularjs": "0.0.1",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "browser-sync": "^2.19.0",
     "cors": "^2.8.5",
     "ejs": "^2.5.6",
